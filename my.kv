@@ -1,0 +1,63 @@
+<Container>:
+
+    ti: text_input
+    timer: time
+
+    Label:
+        text: 'Задача:'
+        size_hint: .15, .05
+        pos_hint: {'x': .05, 'y': .94}
+
+    Label:
+        text: 'Время (в секундах):'
+        size_hint: .3, .05
+        pos_hint: {'x': .05, 'y': .75}
+    
+    Button:
+        text: 'Запуск таймера'
+        size_hint: .425, .2
+        pos_hint: {'x': .05, 'y': .3}
+        background_normal: ''
+        background_color: (255/255, 255/255, 255/255, 1)
+        color: (0/255, 0/255, 0/255, 1)
+        on_press: root.btn1_pressed()
+
+    Button:
+        text: 'Очищение текстовых полей'
+        size_hint: .425, .2 
+        pos_hint: {'x': .525, 'y': .3}
+        background_normal: ''
+        background_color: (255/255, 255/255, 255/255, 1)
+        color: (0/255, 0/255, 0/255, 1)
+        on_press: root.btn2_pressed()
+
+    Button:
+        text: 'Отобразить последнюю\n               запись'
+        size_hint: .425, .2
+        pos_hint: {'x': .05, 'y': .05}
+        background_normal: ''
+        background_color: (255/255, 255/255, 255/255, 1)
+        color: (0/255, 0/255, 0/255, 1)
+        on_press: root.btn3_pressed() 
+
+    Button:
+        text: 'Очищение записей'
+        size_hint: .425, .2 
+        pos_hint: {'x': .525, 'y': .05}
+        background_normal: ''
+        background_color: (255/255, 255/255, 255/255, 1)
+        color: (0/255, 0/255, 0/255, 1)
+        on_press: root.btn4_pressed()    
+
+    TextInput:
+        id: text_input
+        hint_text: 'Введите текст...'
+        size_hint: .9, .15 
+        pos_hint: {'x': .05, 'y': .80}
+
+    TextInput:
+        id: time
+        hint_text: 'Введите вермя...'
+        size_hint: .9, .15 
+        pos_hint: {'x': .05, 'y': .60}     
+   
